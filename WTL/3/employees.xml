@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- initialise stylesheet for xml -->
+<?xml-stylesheet type="text/xsl" href="style.xsl"?> 
+
+<!-- DTD - document type definition -->
+<!DOCTYPE employee [
+<!ELEMENT employee (personaldetails+)>
+<!ELEMENT personaldetails (name,age,jd)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT jd (#PCDATA)>
+]>
+<employee>
+    <personaldetails>
+        <name>Gayatri Godbole</name>
+        <age>19</age>
+        <jd>SDE</jd>
+    </personaldetails>
+    <personaldetails>
+        <name>Jennifer Dsouza</name>
+        <age>22</age>
+        <jd>SDE</jd>
+    </personaldetails>
+    <personaldetails>
+        <name>Karan Mehta</name>
+        <age>39</age>
+        <jd>Manager</jd>
+    </personaldetails>
+    <personaldetails>
+        <name>Mihir Deshpande</name>
+        <age>40</age>
+        <jd>CEO</jd>
+    </personaldetails>
+</employee>
